@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    background-color: cadetblue;
+}
+
+.title{
+    font-size: large;
+    text-align: center;
+    background-color: blue;
+    color:white;
+    padding:1px;
+    margin-top:-8px;
+}
+
+.city-search{
+
+}
+
+#search-btn{
+margin-top: 2px;
+}
+
+.city-btn{
+
+}
+
+.forcast{
+
+}
+
