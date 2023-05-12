@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>searching stuff</title>
-    <link rel= "stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>searching stuff</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/toArray.js"></script>
+
 </head>
+
 <body>
-   <div class="title">
-    <p>wheather Dashboard</p>
+  <div class="title">
+    Weather Dashboard
+  </div>
+
+  <div>
+    <form id="search-btn">
+      <label for="search-here">What City Did You Have In Mind?</label><br>
+      <input type="text" id="search" name="search" value="search Here"><br>
+      <input id="submit" type="submit" value="Search">
+    </form>
+  </div>
+
+  <div>
+    <button id="atlanta-btn">Atlanta</button>
+    <button id="denver-btn">Denver</button>
+    <button id="seattle-btn">Seattle</button>
+    <button id="sanfrancisco-btn">San Francisco</button>
+    <button id="orlando-btn">Oralando</button>
+    <button id="newyork-btn">New York</button>
+    <button id="chicago-btn">Chicago</button>
+    <button id="austin-btn">Austin</button>
+  </div>
+
+  <div class="forcast">
+    <h4>5-Day Forecast</h4>
+    <div class="texthere">
+      <div class="temperature">
+        <div class="weather-conditions">
+        </div>
+      </div>
     </div>
-    <div class="city-search">
-        <p>Search for a City</p>
-        <input class = 'search' type="text"></input>
-    </div>
-    <div>
-        <button id="search-btn">Search</button>
-    </div>
-    <div>
-                <button class="city-btn">Atlanta</button>
-                <button class="city-btn">Denver</button>
-                <button class="city-btn">Seattle</button>
-                <button class="city-btn">San Francisco</button>
-                <button class="city-btn">Oralando</button>
-                <button class="city-btn">New York</button>
-                <button class="city-btn">Chicago</button>
-                <button class="city-btn">Austin</button>
-    </div>
-    <div class="forcast">
-        <p>5-Day Forecast</p>
-    </div>
+  </div>
 
 
-    <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,31 @@
 var apiKey = '3d85aa9354abe822af062e8c8dcded33'
-var url = 'https://api.openweathermap.org/data/2.5/forecast?q=atlanta&appid=7e34e043867e2cfc262eed5f387eb48e'
+var url = 'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=3d85aa9354abe822af062e8c8dcded33'
 var searchBtn = document.querySelector('#search-btn')
+var atlantaBtn = document.querySelector('#atlanta-btn')
+var denverBtn = document.querySelector('#denver-btn')
+var seattleBtn = document.querySelector('#seattle-btn')
+var sanfranBtn = document.querySelector('#sanfrancisco-btn')
+var orlandoBtn = document.querySelector('#orlando-btn')
+var newyorkBtn = document.querySelector('#newyork-btn')
+var chicagoBtn = document.querySelector('#chicago-btn')
+var austinBtn = document.querySelector('#austin-btn')
+var submitBtn = document.querySelector('#submit')
+
+
+function anywhere() {
+    fetch('https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=3d85aa9354abe822af062e8c8dcded33')
+    .then(function(response){
+        console.log(response)
+        return response.json()
+    })
+    .then(function(data){
+        console.log(data)
+    });
+}
+submitBtn.addEventListener('click', anywhere)
 
 function atlanta() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=atlanta&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -14,10 +36,10 @@ function atlanta() {
         });
         
 }
-searchBtn.addEventListener('click', atlanta)
+atlantaBtn.addEventListener('click', atlanta,)
 
 function denver() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=denver&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -28,10 +50,10 @@ function denver() {
         });
         
 }
-searchBtn.addEventListener('click', denver)
+denverBtn.addEventListener('click', denver)
 
 function seattle() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=seattle&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -42,10 +64,10 @@ function seattle() {
         });
         
 }
-searchBtn.addEventListener('click', seattle)
+seattleBtn.addEventListener('click', seattle)
 
 function sanFrancisco() {
-    console.log('test')
+   
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=san+francisco&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -56,10 +78,10 @@ function sanFrancisco() {
         });
         
 }
-searchBtn.addEventListener('click', sanFrancisco)
+sanfranBtn.addEventListener('click', sanFrancisco)
 
 function orlando() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=orlando&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -70,10 +92,10 @@ function orlando() {
         });
         
 }
-searchBtn.addEventListener('click', orlando)
+orlandoBtn.addEventListener('click', orlando)
 
 function newYork() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=new+york&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -84,10 +106,10 @@ function newYork() {
         });
         
 }
-searchBtn.addEventListener('click', newYork)
+newyorkBtn.addEventListener('click', newYork)
 
 function chicago() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=chicago&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -98,10 +120,10 @@ function chicago() {
         });
         
 }
-searchBtn.addEventListener('click', chicago)
+chicagoBtn.addEventListener('click', chicago)
 
 function austin() {
-    console.log('test')
+    
     fetch('https://api.openweathermap.org/data/2.5/forecast?q=austin&appid=7e34e043867e2cfc262eed5f387eb48e&units=imperial')
         .then(function(response){
             console.log(response)
@@ -112,9 +134,24 @@ function austin() {
         });
         
 }
-searchBtn.addEventListener('click', austin)
 
-
+localStorage.setItem('Atlanta', JSON.stringify(atlanta))
+localStorage.getItem('atlanta')
+JSON.parse(localStorage.getItem('atlanta'));
+localStorage.setItem('denver', JSON.stringify(denver))
+localStorage.getItem('denver')
+localStorage.setItem('seattle', JSON.stringify(seattle))
+localStorage.getItem('seattle')
+localStorage.setItem('San Francisco', JSON.stringify(sanFrancisco))
+localStorage.getItem('San Francisco')
+localStorage.setItem('Orlando', JSON.stringify(orlando))
+localStorage.getItem('Orlando')
+localStorage.setItem('Chicago', JSON.stringify(chicago))
+localStorage.getItem('chicago')
+localStorage.setItem('Austin', JSON.stringify(austin))
+localStorage.getItem('Austin')
+localStorage.setItem('New York', JSON.stringify(newYork))
+localStorage.getItem('New York')
 
 
 

@@ -1,31 +1,51 @@
+body{
+  background-color: rgba(5, 5, 79, 0.989)
+}
+
 .container{
     display: flex;
     background-color: cadetblue;
 }
 
 .title{
-    font-size: large;
-    text-align: center;
-    background-color: blue;
-    color:white;
-    padding:1px;
-    margin-top:-8px;
-}
+text-align: center;
+color:black;
+margin-bottom:100px;
+background-color:white;
+padding:80px;
+font-size:40px;
+border-radius:20px
 
-.container-box{
-    
-}
-.city-search{
 
 }
+
+
 
 #search-btn{
-margin-top: 10px;
+margin-top: 15px;
 margin-bottom: 30px;
-
+color:white;
+font-size:25px;
+text-align: center;
 }
 
-.city-btn {
+#search{
+  border-radius:10px;
+  height: 35px;
+  width:300px;
+}
+
+#submit{
+  height: 34px;
+  margin-top:15px;
+  font-family:sans-serif;
+}
+
+#submit :hover{
+  background-color:grey;
+}
+
+#atlanta-btn {
   background-color: #fff;
   border: 1px solid #d5d9d9;
   border-radius: 8px;
@@ -46,21 +66,182 @@ margin-bottom: 30px;
   touch-action: manipulation;
   vertical-align: middle;
   width: 100px;
-  margin-top:5px;
+  margin-top:20px;
 }
 
-.city-btn :hover {
-  background-color: grey;
-}
-
-.city-btn :focus {
-  border-color: #008296;
+#denver-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  outline: 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
+}
+
+#seattle-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
+}
+
+#sanfrancisco-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
+}
+
+#orlando-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
+}
+
+#newyork-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
+}
+
+#chicago-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
+}
+
+#austin-btn{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top:20px;
 }
 
 
 .forcast{
-
+color:white;
+font-family: sans-serif;
+font-size:xx-large;
 }
+
 
